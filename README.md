@@ -22,7 +22,7 @@ Projekt ten składa się z następujących komponentów:
 - Odpalenie API: ** cd .\api\Project\ **
 - * dotnet restore
   * dotnet run
-- Następnie otworzyć nowy terminal (np. vs code) i wpisać **cd .\Moje-Filmy\ui\biblioteka-ui\  **
+- Następnie otworzyć nowy terminal (np. vs code) i wpisać **cd .\moje-filmy-projekt\ui\biblioteka-ui\  **
 - * npm install
   * npm run dev
 
