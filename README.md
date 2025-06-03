@@ -26,4 +26,21 @@ Projekt ten składa się z następujących komponentów:
 - * npm install
   * npm run dev
 
- 
+# OPIS PLIKÓW DLA api/Project/
+| Plik/folder                       | Co robi?                                                                         |
+| --------------------------------- | -------------------------------------------------------------------------------- |
+| `Controllers/MoviesController.cs` | Główna logika API – tu trafiają zapytania z przeglądarki: GET, POST, PUT, DELETE |
+| `Models/Movie.cs`                 | Klasa opisująca film (np. tytuł, reżyser, rok, opis)                             |
+| `Data/DataContext.cs`             | Połączenie z bazą danych – tu .NET wie gdzie wysyłać zapytania                   |
+| `Program.cs`                      | Start aplikacji, rejestracja API, konfiguracja                                   |
+| `appsettings.json`                | Ustawienia, np. dane logowania do bazy PostgreSQL                                |
+
+# OPIS PLIKÓW DLA ui/biblioteka-ui/
+| Plik/folder                    | Co robi?                                                                                 |
+| ------------------------------ | ---------------------------------------------------------------------------------------- |
+| `src/views/HomeView.vue`       | Główna strona – pokazuje listę filmów                                                    |
+| `src/components/MovieForm.vue` | Formularz do dodawania/edycji filmu                                                      |
+| `src/components/MovieItem.vue` | Jedna linijka w tabeli – pojedynczy film                                                 |
+| `src/services/MovieService.js` | Tu są funkcje `getAll()`, `addMovie()`, `updateMovie()` itd. – wysyłają zapytania do API |
+| `vite.config.js`               | Konfiguracja projektu frontendowego                                                      |
+| `package.json`                 | Lista paczek npm (Vue, Bootstrap itd.) i skrypty (`npm run dev`, `build` itd.)           |
