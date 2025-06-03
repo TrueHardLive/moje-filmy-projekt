@@ -5,6 +5,9 @@ Projekt ten składa się z następujących komponentów:
 * **STYLE**: Zaimplementowane przy pomocy BOOTSTRAP 5
 * **Baza Danych**: API wysyła REQUESTY do bazy danych utworzonej za pomocą *Neon Cloud PostgreSQL*. Baza danych w projekcie jest jawna ze względu na ułatwienie dostępu i ułatwienie konfiguracji projektu - jest to rozwiązanie niebezpieczne, ale prostsze w implementecji.
 
+- Pozwala dodać nowy film (np. „Incepcja”, „Shrek”)
+- wyświetla wszystkie filmy bazy
+
 # Wymagania
 - .NET SDK 6.0 (lub nowszy) dla API
 - VS 2022 z odpowiednimi rozszerzeniami
@@ -14,8 +17,8 @@ Projekt ten składa się z następujących komponentów:
 - UI korzysta z portu 3500, na pętli zwrotnej
 
 # Instrukcja Uruchomienia (terminal vs code)
-- Klonowanie Repozytorium do folderu: np. **git clone https://github.com/WiktorJerzyk/Moje-Filmy.git**
-- Następnie trzeba przejść do folderu w którym jest zawartość repozytorium **cd Moje-Filmy**
+- Klonowanie Repozytorium do folderu: np. **git clone https://github.com/TrueHardLive/moje-filmy-projekt.git**
+- Następnie trzeba przejść do folderu w którym jest zawartość repozytorium **cd moje-filmy-projekt**
 - Odpalenie API: ** cd .\api\Project\ **
 - * dotnet restore
   * dotnet run
